@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint:recommended",
+  "rules": {
+    "semi": "error",
+    "eqeqeq": "off",
+    "curly": "error"
+  }
+}
+
