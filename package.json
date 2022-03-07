@@ -1,5 +1,5 @@
 {
-    "name": "@researchsquarecompany/delivery-scripts",
+    "name": "delivery-scripts",
     "version": "1.0.0",
     "description": "Kinda like `react-scripts` and inspired by `paypal-scripts`",
     "main": "index.js",
@@ -35,10 +35,6 @@
         "babel-polyfill": "^6.26.0",
         "eslint": "^7.0.0",
         "eslint-loader": "^4.0.2"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/researchsquare/delivery-scripts.git"
     },
     "bugs": {
         "url": "https://github.com/researchsquare/delivery-scripts/issues"
