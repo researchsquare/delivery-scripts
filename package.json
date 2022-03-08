@@ -1,6 +1,6 @@
 {
     "name": "@researchsquarecompany/delivery-scripts",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Kinda like `react-scripts` and inspired by `paypal-scripts`",
     "main": "index.js",
     "scripts": {
@@ -19,7 +19,7 @@
         "@babel/plugin-transform-modules-commonjs": "^7.2.0",
         "@babel/plugin-transform-runtime": "^7.17.0",
         "@babel/preset-env": "^7.16.11",
-        "@babel/react": "^7.16.7",
+        "@babel/preset-react": "^7.16.7",
         "babel-eslint": "^10.1.0",
         "babel-loader": "^8.1.0",
         "babel-polyfill": "^6.26.0",
