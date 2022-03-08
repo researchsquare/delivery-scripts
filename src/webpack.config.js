@@ -8,9 +8,6 @@ const babelConfig = require("./babel.config.js");
 const env = process.env.NODE_ENV || "production";
 const isDev = env === "development";
 
-const outputPath = path.resolve(__dirname, "../../public/operations/dist");
-const publicPath = "/operations/dist/";
-
 module.exports = {
     mode: isDev ? "development" : "production",
     resolve: {
@@ -22,20 +19,14 @@ module.exports = {
     },
     output: {
         filename: "[name].[contenthash].js",
-        path: outputPath,
     },
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: ["babel-loader", "eslint-loader"],
-            },
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader",
+                    loader: require.resolve("babel-loader"),
                     options: {
                         ...babelConfig,
                     },
@@ -47,7 +38,7 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                     },
-                    "css-loader",
+                    require.resolve("css-loader"),
                 ],
             },
             {
@@ -72,9 +63,6 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: "Caching",
-        }),
-        new WebpackManifestPlugin({
-            publicPath,
         }),
         new webpack.ProvidePlugin({
             $: "jquery",

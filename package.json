@@ -1,5 +1,5 @@
 {
-    "name": "delivery-scripts",
+    "name": "@researchsquarecompany/delivery-scripts",
     "version": "1.0.0",
     "description": "Kinda like `react-scripts` and inspired by `paypal-scripts`",
     "main": "index.js",
@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "bin": {
-        "delivery-scripts build": "src/index.js"
+        "delivery-scripts": "src/index.js"
     },
     "author": "",
     "license": "ISC",
@@ -19,10 +19,14 @@
         "@babel/plugin-transform-modules-commonjs": "^7.2.0",
         "@babel/plugin-transform-runtime": "^7.17.0",
         "@babel/preset-env": "^7.16.11",
-        "@babel/preset-react": "^7.16.7",
+        "@babel/react": "^7.16.7",
         "babel-eslint": "^10.1.0",
         "babel-loader": "^8.1.0",
+        "babel-polyfill": "^6.26.0",
         "css-loader": "^5.2.4",
+        "esbuild": "^0.14.25",
+        "eslint": "^7.0.0",
+        "eslint-loader": "^4.0.2",
         "html-webpack-plugin": "^5.3.1",
         "imports-loader": "^0.8.0",
         "mini-css-extract-plugin": "^1.6.0",
@@ -32,12 +36,15 @@
         "webpack": "^5.35.0",
         "webpack-cli": "^4.6.0",
         "webpack-manifest-plugin": "^3.1.1",
-        "babel-polyfill": "^6.26.0",
-        "eslint": "^7.0.0",
-        "eslint-loader": "^4.0.2"
+        "webpack-merge": "^5.8.0"
     },
     "bugs": {
         "url": "https://github.com/researchsquare/delivery-scripts/issues"
     },
-    "homepage": "https://github.com/researchsquare/delivery-scripts#readme"
+    "homepage": "https://github.com/researchsquare/delivery-scripts#readme",
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/researchsquare/delivery-scripts.git"
+    }
 }

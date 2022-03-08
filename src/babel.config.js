@@ -1,9 +1,9 @@
 module.exports = {
     compact: false,
     presets: [
-        "@babel/react",
+        require.resolve("@babel/preset-react"),
         [
-            "@babel/env",
+            require.resolve("@babel/preset-env"),
             {
                 modules: false,
                 targets: {
@@ -17,13 +17,15 @@ module.exports = {
         ],
     ],
     plugins: [
-        "@babel/plugin-proposal-object-rest-spread",
-        "@babel/transform-runtime",
-        "@babel/plugin-proposal-class-properties",
+        require.resolve("@babel/plugin-proposal-object-rest-spread"),
+        require.resolve("@babel/plugin-transform-runtime"),
+        require.resolve("@babel/plugin-proposal-class-properties"),
     ],
     env: {
         test: {
-            plugins: ["@babel/plugin-transform-modules-commonjs"],
+            plugins: [
+                require.resolve("@babel/plugin-transform-modules-commonjs"),
+            ],
         },
     },
 };
