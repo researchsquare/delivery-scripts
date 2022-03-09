@@ -40,7 +40,7 @@ module.exports = {
 ## Documentation
 
 ### outputPath
-This is the folder where you're built assets will end up.
+This is the folder where the built and bundled assets will end up.
 
 ### manifestPath
 This is the folder where a manifest file will be generated upon successfull build.
