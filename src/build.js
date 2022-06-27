@@ -50,7 +50,7 @@ module.exports = function build(dsConfig) {
             if (messages.errors.length > 1) {
                 messages.errors.length = 1;
             }
-            return new Error(messages.errors.join("\n\n"));
+            throw new Error(messages.errors.join("\n\n"));
         }
 
         const resolveArgs = {
