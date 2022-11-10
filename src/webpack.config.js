@@ -89,4 +89,5 @@ module.exports = {
             },
         },
     },
+    devtool: isDev ? 'eval-source-map' : 'hidden-source-map',
 };
