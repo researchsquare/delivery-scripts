@@ -1,6 +1,6 @@
 {
     "name": "@researchsquarecompany/delivery-scripts",
-    "version": "1.3.5",
+    "version": "1.3.6",
     "description": "Kinda like `react-scripts` and inspired by `paypal-scripts`",
     "main": "index.js",
     "scripts": {
